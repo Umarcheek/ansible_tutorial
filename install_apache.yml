@@ -4,6 +4,13 @@
   become: true
   tasks:
  
-  - name: install apache2 package
+  - name: install apache and php package
     yum: 
-      name: httpd
+      name: 
+        - httpd
+        - php
+      state: latest
+      update_cache: yes
+
+ 
+    
