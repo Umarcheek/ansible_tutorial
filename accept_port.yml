@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: allow 80 port
+    command: systemctl start httpd
+
+    
